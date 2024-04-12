@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+ <center>
+    <h1>Cadastro de Clientes</h1>
+ </center>
+ <p><span style="color:red"span>Todos os dados são de preenchimento obrigatório</p>
+<body  style= "background-color:rgb(195, 243, 225)">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form>
+            <label for="nome"> Nome:</label> <br>
+            <input id="name" type="text" required maxlength="20"> <br><br>
+            Data de Nascimento: <br>
+
+            <input type="date" required> <br><br>
+
+            Sexo: <br>
+            <input type="radio" name="sexo"> Masculino
+            <input type="radio" name="sexo"> Feminino
+            <br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados de Contato</legend>
+        Email: <br>
+        <input type="email" required> <br><br>
+
+        Telefone: <br>
+        <input type="number" placeholder="Até 9 caracteres" required>
+
+        website:
+        <input type="url">
+        <br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Localização</legend>
+        Endereço:
+        <input type="text" required> <br><br>
+
+        Número;
+        <input type="number" min="1" max="9999" step="2">
+
+        Cidade:
+        <select>
+            <option>Selecione</option>
+            <option>Uberlândia</option>   
+            <option>Ituiutaba</option>
+            <option>Araguari</option>
+        </select>
+    </fieldset>
+
+
+    <input type="submit" value="Cadastrar">
+    <input type="submit" value="Limpar">
+</form>
+    
+</body>
+</html>
